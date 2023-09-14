@@ -10,10 +10,11 @@ int numero, resposta;
 int contador=0;
 
 int main(int argc, char *argv[])
-{
+{ setlocale(LC_ALL, "Portuguese");
 do{
 	system("cls");
-	setlocale(LC_ALL, "Portuguese");
+	
+	
 	printf("Tabuada\n\n");	
 	printf("Digite o número da tabuada: ");
 	scanf("%d", &numero);
@@ -27,6 +28,7 @@ do{
 	printf("\nDigite opção desejada: ");
 	scanf("%d", &resposta);
 }while(resposta != 2);
+
 	system("pause");
 	return 0;
 }
